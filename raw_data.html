@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Raw Data</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="rawDataPage">
+    <h1>Raw Data</h1>
+    <pre id="rawDataOutput"></pre>
+  </div>
+  <script>
+    function populateRawData() {
+      const rawDataOutput = document.getElementById('rawDataOutput');
+      const eventList = JSON.parse(localStorage.getItem('eventList')) || [];
+      rawDataOutput.textContent = JSON.stringify(eventList, null, 2);
+    }
+    window.onload = populateRawData;
+  </script>
+</body>
+</html>
