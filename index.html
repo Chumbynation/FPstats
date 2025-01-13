@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FPstats - Football Game Tracker</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="app">
+    <div id="sidebar">
+      <img id="logoImage" src="logo.jpeg" alt="FPstats Logo">
+      <button class="event-button blue">Ball Won</button>
+      <button class="event-button red">Ball Lost</button>
+      <button class="event-button orange">Chance</button>
+      <button class="event-button green">Goal</button>
+      <div id="buttonContainer">
+        <button id="undoButton">Undo</button>
+        <button id="clearButton">Clear Pitch</button>
+      </div>
+      <div id="halfToggle">
+        <button id="fullGameButton">Full Game</button>
+        <button id="firstHalfButton">First Half</button>
+        <button id="secondHalfButton">Second Half</button>
+      </div>
+      <div id="filters">
+        <h3>Filters</h3>
+        <label><input type="checkbox" class="filter-checkbox" data-filter="blue"> Ball Won</label>
+        <label><input type="checkbox" class="filter-checkbox" data-filter="red"> Ball Lost</label>
+        <label><input type="checkbox" class="filter-checkbox" data-filter="orange"> Chance</label>
+        <label><input type="checkbox" class="filter-checkbox" data-filter="green"> Goal</label>
+      </div>
+    </div>
+    <div id="pitchArea">
+      <div id="pitch">
+        <div class="vertical-line" style="left: 33.33%;"></div>
+        <div class="vertical-line" style="left: 66.66%;"></div>
+        <div class="label" style="top: 10px; left: 16.66%;">D3</div>
+        <div class="label" style="top: 10px; left: 50%;">M3</div>
+        <div class="label" style="top: 10px; left: 83.33%;">F3</div>
+        <img id="pitchImage" src="football_pitch.jpeg" alt="Football Pitch">
+      </div>
+    </div>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+

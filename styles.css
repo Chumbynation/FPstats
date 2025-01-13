@@ -1,0 +1,145 @@
+#app {
+  display: flex;
+  height: 100vh; 
+}
+
+#sidebar {
+  width: 200px;
+  background-color: #f0f0f0;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  overflow-y: auto;
+}
+
+#logoImage {
+  width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+#pitchArea {
+  flex-grow: 1;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#pitch {
+  position: relative;
+  width: 90%;
+}
+
+#pitchImage {
+  width: 100%;
+  height: auto;
+}
+
+/* Event button styles */
+.event-button {
+  display: block;
+  margin-bottom: 10px;
+  padding: 10px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  color: black;
+  font-weight: bold;
+}
+
+.event-button.blue { background-color: blue; }
+.event-button.red { background-color: red; }
+.event-button.orange { background-color: orange; }
+.event-button.green { background-color: green; }
+
+.event-dot {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.pass-line {
+  position: absolute;
+  background-color: black;
+  height: 2px;
+  transform-origin: 0 0;
+}
+
+#buttonContainer {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+#undoButton, #clearButton {
+  padding: 5px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  background-color: #cccccc;
+  font-weight: bold;
+  flex-grow: 1;
+  margin-right: 5px;
+}
+
+#clearButton {
+  margin-right: 0;
+}
+
+#halfToggle {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+#halfToggle button {
+  padding: 5px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  background-color: #dddddd;
+  font-weight: bold;
+  flex-grow: 1;
+  margin-right: 5px;
+}
+
+#halfToggle button:last-child {
+  margin-right: 0;
+}
+
+#filters {
+  margin-top: 10px;
+}
+
+#filters label {
+  display: block;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.filter-checkbox {
+  margin-bottom: 10px;
+}
+
+/* Styles for pitch thirds division */
+.vertical-line {
+  position: absolute;
+  height: 100%;
+  width: 1px;
+  background-color: lightgrey;
+}
+
+/* Styles for the labels */
+.label {
+  position: absolute;
+  transform: translate(-50%, 0);
+  font-size: 14px;
+  font-weight: bold;
+  color: black;
+}
+
+
